@@ -1,20 +1,15 @@
 import React from "react";
 
-const Main = () => {
+const Navbar = () => {
   return (
     <div>
-      <label for="name">Email Id: &emsp;</label>
-      <input id="name" type="box" placeholder="Email ID"></input>
-      <br></br>
-      <label for="na">Password: &emsp;</label>
-      <input id="na" type="box" placeholder="Password"></input>
-      <br></br>
-      <label for="n">Submit: &emsp;</label>
-      <input id="n" type="box" placeholder="click"></input>
-
-      <input></input>
+      <hr></hr>
+      <h1 style={{ backgroundColor: "lavender", fontSize: "30px" }}>
+        Your Name
+      </h1>
+      <hr></hr>
     </div>
   );
 };
 
-export default Main;
+export default Navbar;
