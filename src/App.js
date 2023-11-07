@@ -1,14 +1,15 @@
-import { Message } from "./Message";
-const ListElements=()=>{
-    return(
-        <div>
-            <Message>Hello</Message>
-    <ul>
-    <li>ReactJS</li>
-    <li>NodeJS</li>
-    <li>NextJS</li>
-</ul>
-</div>
-    );
-};
-export default ListElements;
+export default App; //Default  exports
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Main from "./component/Main";
+import Footer from "./component/Footer";
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Main />
+      <Footer />
+    </div>
+  );
+}
