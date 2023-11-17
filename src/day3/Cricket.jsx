@@ -23,6 +23,10 @@ const Cricket = () => {
         6
       </button>
       &emsp; &emsp;
+      <button className="" onClick={() => setCount(0)}>
+        Reset
+      </button>
+      &emsp; &emsp;
       <button className="red-button" onClick={() => setCounts(cnt + 1)}>
         {" "}
         Wicket
