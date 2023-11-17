@@ -145,21 +145,6 @@ const App = () => {
 export default App;
 */
 // App.js
-//form code
-
-import React from "react";
-import BasicForm from "./BasicForm";
-
-const App = () => {
-  return (
-    <div>
-      <h1>Your React App</h1>
-      <BasicForm />
-    </div>
-  );
-};
-
-export default App;
 /*
 
 import React from "react";
@@ -167,69 +152,69 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const Home = () => (
   <div>
-    <h2>Welcome to the Gardening Store</h2>
-    <p>Explore our wide range of gardening products!</p>
+  <h2>Welcome to the Gardening Store</h2>
+  <p>Explore our wide range of gardening products!</p>
   </div>
-);
-
-const Products = () => (
-  <div>
+  );
+  
+  const Products = () => (
+    <div>
     <h2>Our Products</h2>
     <p>List of gardening products goes here...</p>
-  </div>
-);
-
-const About = () => (
-  <div>
-    <h2>About Us</h2>
-    <p>Learn more about our gardening store.</p>
-  </div>
-);
-
-function App() {
-  return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/products">Products</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <hr />
-
-        <Route path="/" exact component={Home} />
-        <Route path="/products" component={Products} />
-        <Route path="/about" component={About} />
-      </div>
-    </Router>
-  );
-}
-
-export default App;
-
-import GiftShop from "./GiftShop";
-
-import GiftShop from "./GiftShop"; // Adjust the path based on your project structure
-
-function App() {
-  return (
-    <div className="App">
-      <GiftShop />
     </div>
-  );
-}
-
-export default App;
-
+    );
+    
+    const About = () => (
+      <div>
+      <h2>About Us</h2>
+      <p>Learn more about our gardening store.</p>
+      </div>
+      );
+      
+      function App() {
+        return (
+          <Router>
+          <div>
+          <nav>
+          <ul>
+          <li>
+          <Link to="/">Home</Link>
+          </li>
+          <li>
+          <Link to="/products">Products</Link>
+          </li>
+          <li>
+          <Link to="/about">About</Link>
+          </li>
+          </ul>
+          </nav>
+          
+          <hr />
+          
+          <Route path="/" exact component={Home} />
+          <Route path="/products" component={Products} />
+          <Route path="/about" component={About} />
+          </div>
+          </Router>
+          );
+        }
+        
+        export default App;
+        
+        import GiftShop from "./GiftShop";
+        
+        import GiftShop from "./GiftShop"; // Adjust the path based on your project structure
+        
+        function App() {
+          return (
+            <div className="App">
+            <GiftShop />
+            </div>
+            );
+          }
+          
+          export default App;
+          
 // App.js
 import React from "react";
 import Home from "./Home";
@@ -255,28 +240,42 @@ import Style from "./day2/Style";
 function App() {
   return (
     <div>
-      <Style />
+    <Style />
     </div>
-  );
-}
-
-export default App;*/
+    );
+  }
+  
+  export default App;*/
 //gokutransformation code
 /*
-import React from "react";
-import GokuTransformation from "./day3/GokuTransformation";
-
-const App = () => {
-  return <GokuTransformation />;
-};
+  import React from "react";
+  import GokuTransformation from "./day3/GokuTransformation";
+  
+  const App = () => {
+    return <GokuTransformation />;
+  };
+  export default App;
+  
+  //togglemessage code*/
+/*
+  import ToggleMessage from "./day3/ToggleMessage";
+  
+  const App = () => {
+    return <ToggleMessage />;
+  };
 export default App;
 
-//togglemessage code*/
-/*
-import ToggleMessage from "./day3/ToggleMessage";
+//form code
+import Form from "./day2/Form";
 
 const App = () => {
-  return <ToggleMessage />;
+  return <Form />;
 };
+
 export default App;
 */
+import Fruit from "./day4/Fruit";
+const App = () => {
+  return <Fruit />;
+};
+export default App;
